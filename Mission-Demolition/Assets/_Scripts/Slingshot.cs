@@ -64,6 +64,8 @@ static public Vector3 LAUNCH_POS
         projectileRigidbody.velocity = - mouseDelta * velocityMult;
         FollowCam.POI = projectile;
         projectile = null;
+        MissionDemolition.ShotFired();
+        ProjectileLine.S.poi = projectile;
         }
     }
 
